@@ -23,6 +23,7 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem "capybara"
 end
 group :production do
   gem 'rails_12factor'

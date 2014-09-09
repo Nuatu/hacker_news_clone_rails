@@ -20,15 +20,26 @@ class UsersController < ApplicationController
   end
 
   def show
-
+    @user = User.find(params[:id])
   end
 
   def edit
+    @user = User.find(params[:id])
+  end
 
+  def update
+    @user = User.find(params[:id])
+    if @user.update(post_params)
+      render "show"
+    else
+      render "edit"
+    end
   end
 
   def destroy
-
+    @user = User.find(params[:id])
+    @user.destroy
+    render "destroy"
   end
 
   private

@@ -1,0 +1,27 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-inner-sm{background-color: #282828;padding: 1px 20px;background-repeat: repeat-x;-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1);-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1);box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1);background-image: linear-gradient(top, #333333, #222222);}
+.navbar-inner-sm .nav {position: relative;left: 0;display: block;float: left;margin: 0 10px 0 0;}
+.navbar-inner-sm .nav.pull-right {float: right;}
+.navbar-inner-sm .nav > li {display: block;float: left;}
+.navbar-inner-sm .nav > li > a {float: none;padding: 4px 5px;line-height: 19px;color: #999999;text-decoration: none;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);}
+.navbar-inner-sm .nav > li > a:hover {background-color: transparent;color: #ffffff;text-decoration: none;}
+.navbar-inner-sm .nav .active > a,.navbar .nav .active > a:hover {color: #ffffff;text-decoration: none;background-color: #003753;}
+.navbar-inner-sm .divider-vertical {height: 27px;width: 1px;margin: 0 9px;overflow: hidden;background-color: #282828;border-left: 1px solid #3f3f3f; border-right: 1px solid #161616;}
+.navbar-inner-sm .nav.pull-right {margin-left: 10px;margin-right: 0;}

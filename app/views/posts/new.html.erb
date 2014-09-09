@@ -1,0 +1,13 @@
+<h1>Create new Post</h1>
+
+<%= form_for(@post) do |f| %>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_field :content %>
+  </div>
+  <button type="submit" class="btn btn-primary btn-xs actions">Submit</button>
+<% end %>

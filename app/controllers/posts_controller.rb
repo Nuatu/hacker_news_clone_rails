@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-before_filter :authorize, only: [:edit, :update]
+before_filter :authorize, only: [:new, :edit, :update]
 
   def index
     @posts = Post.all
@@ -7,6 +7,7 @@ before_filter :authorize, only: [:edit, :update]
 
   def new
     @post = Post.new
+
   end
 
   def create
@@ -39,5 +40,10 @@ before_filter :authorize, only: [:edit, :update]
     @post = Post.find(params[:id])
     @post.destroy
     render 'destroy'
+  end
+
+private
+  def post_params
+    params.require(:post).permit(:title, :content)
   end
 end

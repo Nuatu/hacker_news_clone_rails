@@ -3,6 +3,8 @@
 
 <ol>
   <% @posts.each do |post|%>
-    <li> <%= post.title %> <%= post.content %>
+    <li> <%= link_to "Vote", logout_path %> <%= post.title %> - <%= post.content %> </li>
+    <button type="submit" class="btn btn-primary btn-xs actions">Vote</button>
+    <%= post.qty_likes %>
   <% end %>
 </ol>
